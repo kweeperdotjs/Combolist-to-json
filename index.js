@@ -11,7 +11,7 @@ function saveJSON(filename = '', json = '') {
     		return fs.writeFileSync(filename, JSON.stringify(json, null, 2))
 		}
 lineReader.eachLine('file.txt', function(line, last) {
-	var accs = loadJSON("/home/runner/AuthenticMaroonProfile/accs.json")
+	var accs = loadJSON("./accs.json")
 	var thing = line.split(":")
 	accs.push(
 		{
